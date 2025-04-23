@@ -1,0 +1,30 @@
+body {
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+.header, .main, .footer {
+  padding: 10px;
+  margin: 10px 0;
+}
+.header {
+  background-color: #f8f9fa;
+}
+.main {
+  background-color: #e9ecef;
+}
+.footer {
+  background-color: #dee2e6;
+color: #0056b3;
+}
+.highlight {
+  background-color: #ff0;
+}
+.scripture-box {
+  margin-top: 20px;
+} 

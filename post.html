@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benefits of Religion</title>
+  <link href="css/scratchstyles.css" rel="stylesheet" />
+  <script>
+    function generateScripture() {
+      const scriptures = {
+        sad: "Psalm 34:18 - The Lord is close to the brokenhearted and saves those who are crushed in spirit.",
+        stressed: "Matthew 11:28 - Come to me, all you who are weary and burdened, and I will give you rest.",
+        mourning: "John 14:27 - Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid.",
+        hopeless: "Jeremiah 29:11 - For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.",
+        angry: "Ephesians 4:26 - In your anger do not sin: Do not let the sun go down while you are still angry."
+      };
+      const selectedEmotion = document.getElementById("emotion").value;
+      document.getElementById("scripture").innerText = scriptures[selectedEmotion];
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Benefits of Religion in Life</h1>
+    </div>
+    <div class="main">
+      <h2>Watch this funny video of an impression of the apostles!</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qDPi4buduY0" frameborder="0" allowfullscreen></iframe>
+      
+      <h2>This graph shows the amount of time spent in worship per religion.</h2>
+      <iframe src="https://public.tableau.com/views/ReligiousActivities/Religionsandtheirparticipationinreligiousactivities" width="800" height="600"></iframe>
+      
+      <h2>Benefits of Living Your Religion</h2>
+      <ol>
+        <li>Sense of Purpose and Meaning
+          <ul>
+            <li>Understanding why are we here.</li>
+            <li>Understanding where we come from.</li>
+            <li>Assurance of where we are going.</li>
+          </ul>
+        </li>
+        <li>Sense of Belonging and Community</li>
+          <ul>
+            <li>Support from others</li>  
+            <li>Shared values and beliefs</li>
+            <li>Opportunities for service</li>
+          </ul>
+        <li>Moral and Ethical Guidance</li>
+          <ul>
+            <li>Guidelines for behavior</li>
+            <li>Encouragement to do good</li>
+            <li>Accountability to a higher power</li>
+          </ul>
+      </ol>
+      
+      <h2>Link To Resumé</h2>
+      <a href="index.html">Resume/Bootstrap Page</a>
+      <h2 id="index.html">In-Page Web App Below!!</h2>
+      
+      <h2>Scripture Generator For Your Emotion.</h2>
+      <div class="scripture-box">
+        <label for="emotion">Select your emotion:</label>
+        <select id="emotion">
+          <option value="sad">Sad</option>
+          <option value="stressed">Stressed</option>
+          <option value="mourning">Mourning</option>
+          <option value="hopeless">Hopeless</option>
+          <option value="angry">Angry</option>
+        </select>
+        <button onclick="generateScripture()">Generate Scripture</button>
+        <p id="scripture"></p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Thank you for viewing!!!</p>
+    </div>
+  </div>
+</body>
+</html>
+
